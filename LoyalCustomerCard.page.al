@@ -2,6 +2,8 @@ page 50100 "Loyal Customer Card"
 {
     PageType = Card;
     SourceTable = "Loyal Customer";
+    ApplicationArea = All;
+    UsageCategory = Administration;
 
     layout
     {
