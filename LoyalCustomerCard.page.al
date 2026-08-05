@@ -4,6 +4,7 @@ page 50100 "Loyal Customer Card"
     SourceTable = "Loyal Customer";
     ApplicationArea = All;
     UsageCategory = Administration;
+    Caption = "Ma page"
 
     layout
     {
