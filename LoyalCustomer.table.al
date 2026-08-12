@@ -14,6 +14,8 @@ table 50100 "Loyal Customer"
         {
             Caption = 'Points';
         }
+ field(4; "Status"; Enum "Loyalty Status")
+        { Caption = 'Status';}
     }
 
     keys
