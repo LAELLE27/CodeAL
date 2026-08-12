@@ -20,4 +20,25 @@ page 50100 "Loyal Customer Card"
             }
         }
     }
+ actions
+    {
+        area(Processing)
+        {
+            action("Export Loyal Customers")
+            {
+                ApplicationArea = All;
+                Caption = 'Export Loyal Customers';
+                Image = Export;
+                trigger OnAction()
+                var
+                    xmlLoyalCustomer: xmlport "Loyal Customers Export";
+                begin
+                    xmlLoyalCustomer.SetTableView(Rec);
+                    xmlLoyalCustomer.Run();
+                    Message('Exported loyal customers to XML.');
+                end;
+            }
+
+        }
+    }
 }
