@@ -15,7 +15,7 @@ page 50100 "Loyal Customer Card"
                 field("No."; Rec."No.") { }
                 field("Name"; Rec."Name") { }
                 field("Points"; Rec."Points") { }
- field("Status";Status")
+ field("Status";rec.Status")
         { }
             }
         }
