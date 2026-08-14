@@ -39,6 +39,22 @@ page 50100 "Loyal Customer Card"
                 end;
             }
 
+action("Querie Loyal Customers")
+            {
+                ApplicationArea = All;
+                Caption = 'Export Loyal Customers';
+                Image = Export;
+                trigger OnAction()
+                var
+                    LoyalCustomersPoints: Query "Loyal Customers Points";
+                begin
+                    LoyalCustomersPoints.Open();
+                    while LoyalCustomersPoints.Read() do
+                        Message('%1: %2', LoyalCustomersPoints.No, LoyalCustomersPoints.TotalPoints);
+                    LoyalCustomersPoints.Close();
+                end;
+            }
+
         }
     }
 }
