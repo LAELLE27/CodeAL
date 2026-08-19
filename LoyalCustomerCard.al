@@ -7,9 +7,9 @@ page 50105 "Loyal Customer Card"
     {
         area(Content)
         {
-            field("No."; Rec."No.") { }
-            field("Name"; Rec."Name") { }
-            field("Points"; Rec."Points") { }
+            field("No."; Rec."No.") { applicationArea= all;}
+            field("Name"; Rec."Name") {applicationArea= all;} 
+            field("Points"; Rec."Points") {applicationArea= all;} 
         }
     }
 
