@@ -32,6 +32,17 @@ page 50105 "Loyal Customer Card"
             }
         }
     }
+
+ trigger OnOpenPage()
+    begin
+        Message('Fiche client ouverte.');
+    end;
+
+    trigger OnAfterGetRecord()
+    begin
+        if Rec.Points > 100 then
+            Message('Client VIP : %1', Rec.Name);
+    end;
 }
 
 
